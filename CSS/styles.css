@@ -1,0 +1,31 @@
+ header,
+ footer {
+     background-color: #000;
+     color: #fff
+ }
+ 
+ header a {
+     color: #fff;
+ }
+ 
+ .cta {
+     background-color: #bb0000;
+     color: #fff;
+     font-size: 1.5em;
+ }
+ 
+ .reviews {
+     background-color: #e8e8e8;
+ }
+ 
+ .featured--products {
+     background-color: #fbfbfb;
+ }
+ 
+ .cta-sale {
+     background-color: #127300;
+ }
+ 
+ footer {
+     text-align: center;
+ }
