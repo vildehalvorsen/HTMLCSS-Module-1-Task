@@ -1,104 +1,118 @@
- @font-face {
-     font-family: "Boots And Spurs";
-     src: url("../Fonts/BootsAndSpurs.ttf") format("truetype");
- }
- 
- body {
-     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
- }
- 
- h1,
- h2,
- .logo {
-     font-family: "Boots And Spurs", BDR-mono, Roboto, Tahoma, Geneva, Verdana, sans-serif;
- }
- 
- .product-list h2 {
-     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
- }
- 
- nav ul {
-     padding: 0px;
- }
- 
- nav li {
-     display: inline-block;
- }
- 
- header,
- footer {
-     background-color: #202020;
-     color: #fff;
- }
- /*Links*/
- 
- a {
-     text-decoration: none;
- }
- 
- header a {
-     color: #fff;
-     text-decoration: none;
- }
- 
- .cta-small {
-     padding: 8px 30px;
-     font-size: 1em;
- }
- 
- .cta {
-     background-color: #bb0000;
-     color: #fff;
-     font-size: 0.9em;
-     text-decoration: none;
-     border-radius: 4px;
-     padding: 10px 70px 10px 70px;
- }
- 
- .active {
-     text-decoration: underline;
- }
- 
- .reviews {
-     background-color: #e8e8e8;
- }
- 
- .featured__products {
-     background-color: #fbfbfb;
-     margin-top: 10px;
- }
- 
- .cta-sale {
-     background-color: #127300;
- }
- 
- footer {
-     text-align: center;
-     margin-top: 10px;
- }
- /*Home-page*/
- 
- .welcome {
-     background-image: url(../Images/home-header.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position-x: right;
-     background-position-y: bottom;
-     min-height: 70vh;
- }
- 
- .selling-points__images {
-     border-radius: 100px;
- }
- 
- .review__images {
-     border-radius: 50%;
- }
- /*Contact-page*/
- 
- input,
- select,
- textarea {
-     border: 1px solid #c4c4c4;
-     border-radius: 5px;
- }
+@font-face {
+    font-family: "Boots And Spurs";
+    src: url("../Fonts/BootsAndSpurs.ttf") format("truetype");
+}
+
+body {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+.logo {
+    font-family: "Boots And Spurs", BDR-mono, Roboto, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-list h2 {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+header,
+footer {
+    background-color: #202020;
+    color: #fff;
+}
+
+
+/*Links*/
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta-small {
+    padding: 8px 30px;
+    font-size: 1em;
+}
+
+.cta {
+    background-color: #bb0000;
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 70px 10px 70px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.reviews {
+    background-color: #e8e8e8;
+}
+
+.featured__products {
+    background-color: #fbfbfb;
+    margin-top: 10px;
+}
+
+.cta-sale {
+    background-color: #127300;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/*Home-page*/
+
+.welcome {
+    background-image: url(../Images/home-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    min-height: 70vh;
+}
+
+.welcome__content {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+}
+
+.selling-points__images {
+    border-radius: 100px;
+}
+
+.review__images {
+    border-radius: 50%;
+}
+
+
+/*Contact-page*/
+
+input,
+select,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
