@@ -5,6 +5,10 @@
  
  body {
      font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+     min-height: 100vh;
+     margin: 0px;
+     display: grid;
+     grid-template-rows: auto 1fr auto;
  }
  
  h1,
@@ -15,6 +19,15 @@
  
  .product-list h2 {
      font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ header {
+     display: flex;
+     align-items: center;
+ }
+ 
+ nav {
+     margin-left: 25px;
  }
  
  nav ul {
@@ -41,19 +54,23 @@
      text-decoration: none;
  }
  
- .cta-small {
-     padding: 8px 30px;
-     font-size: 1em;
- }
- 
  .cta {
      background-color: #bb0000;
      color: #fff;
-     font-size: 0.9em;
-     text-decoration: none;
+     font-size: 1em;
      text-transform: uppercase;
-     border-radius: 4px;
-     padding: 10px 70px 10px 70px;
+     padding: 10px 80px;
+     border-radius: 5px;
+ }
+ 
+ .cta-small {
+     padding: 8px 20px;
+     font-size: 0.8em;
+     grid-column: 2;
+     grid-row: 2;
+     min-width: 51.2px;
+     text-align: center;
+     margin-top: 5px;
  }
  
  .active {
@@ -64,9 +81,31 @@
      background-color: #e8e8e8;
  }
  
- .featured__products {
+ .products {
      background-color: #fbfbfb;
-     margin-top: 10px;
+     display: grid;
+     grid-template-columns: 1fr auto;
+     align-items: center;
+ }
+ 
+ .products img {
+     grid-column: -1/1;
+ }
+ 
+ .products h2,
+ .products h3,
+ .products p {
+     grid-column: 1;
+     font-size: 0.9em;
+     margin: 5px;
+ }
+ 
+ .products--sale {
+     display: flex;
+ }
+ 
+ .old-price {
+     text-decoration: line-through;
  }
  
  .cta-sale {
@@ -75,7 +114,7 @@
  
  footer {
      text-align: center;
-     margin-top: 10px;
+     padding: 20px;
  }
  /*Home-page*/
  
@@ -86,6 +125,7 @@
      background-position-x: right;
      background-position-y: bottom;
      min-height: 70vh;
+     position: relative;
  }
  
  .welcome__content {
@@ -95,12 +135,64 @@
      left: 100px;
  }
  
+ .selling-points {
+     margin: 50px auto;
+ }
+ 
+ .reviews__content,
+ .selling-points {
+     max-width: 1000px;
+     display: flex;
+ }
+ 
  .selling-points__images {
      border-radius: 100px;
+     width: 100%;
+ }
+ 
+ .selling-points>*,
+ .reviews__content>* {
+     flex: 1;
+ }
+ 
+ .reviews {
+     text-align: center;
+     padding: 50px;
+ }
+ 
+ .reviews__content {
+     text-align: left;
+     margin: auto;
+ }
+ 
+ .reviews__content div {
+     margin: 50px;
  }
  
  .review__images {
+     width: 80px;
      border-radius: 50%;
+     float: right;
+ }
+ 
+ .reviews__name {
+     display: block;
+ }
+ 
+ .featured {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     max-width: 1000px;
+     margin: 50px auto;
+     grid-gap: 10px;
+ }
+ 
+ .featured h2 {
+     grid-column: -1/1;
+ }
+ 
+ .featured img {
+     width: 100%;
  }
  /*Contact-page*/
  
@@ -110,7 +202,7 @@
      /*Utseende og avstand på og mellom tekstfeltene*/
      border: 1px solid #c4c4c4;
      border-radius: 5px;
-     margin: 10px 10px 10px 10px;
+     margin: 10px;
      padding: 10px;
  }
  
@@ -137,4 +229,56 @@
      flex: 1;
      display: flex;
      flex-direction: column;
+ }
+ /* Product Specific Page*/
+ 
+ .product-specific {
+     display: flex;
+     max-width: 1000px;
+     margin: 50px auto;
+ }
+ 
+ .product-specific>* {
+     flex: 1
+ }
+ 
+ .product-specific__details {
+     padding: 0px 30px;
+ }
+ 
+ .product-specific__details a {
+     display: block;
+     width: 95.767px;
+     margin: auto;
+ }
+ 
+ .product-specific__price {
+     font-size: 1.5em;
+ }
+ 
+ .product-image {
+     width: 100%;
+ }
+ 
+ .product-image_thumbnails {
+     display: flex;
+     justify-content: space-between;
+     gap: 10px;
+     margin-top: 5px;
+ }
+ /* Guitars Page*/
+ 
+ .guitars {
+     max-width: 1000px;
+     margin: auto;
+ }
+ 
+ .product-list {
+     display: grid;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+     gap: 20px;
+ }
+ 
+ .products img {
+     width: 100%;
  }
